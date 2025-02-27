@@ -5,13 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ikebana</title>
     <style>
-        @font-face {
-            font-family: 'Exposure Trial';
-            src: url('../ikebana/ExposureTrial[+50].otf') format('opentype'); 
-            font-weight: 300;
-            font-style: normal;
-        }
-
         * {
             margin: 0;
             padding: 0;
@@ -27,53 +20,48 @@
             width: 100vw;
         }
 
-        /* Default layout (desktop) */
         .responsive-two-columns {
             display: flex;
             justify-content: space-between;
             align-items: center;
             width: 100vw;
             height: 100vh;
-            padding: 5rem;
         }
 
         .left-column {
-            flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         .right-column {
-            flex: 1;
             display: flex;
             flex-direction: column;
             align-items: flex-end;
             justify-content: center;
-            padding: 5rem;
+            padding: 16rem;
         }
 
-        /* Image */
+        .right-column p {
+            padding-bottom: 1rem;
+        }
+
         #displayedImage {
             display: none;
             width: auto;
             height: 100vh;
         }
 
-        /* Input field */
         #charInput {
-            font-family: 'Exposure Trial', sans-serif;
             font-size: 1rem;
             text-align: center;
             padding: 0.5rem;
             border: 1px solid #000;
             margin-bottom: 1rem;
-            width: 3rem;
+            width: 6rem;
         }
 
-        /* Button */
         #submitButton {
-            font-family: 'Exposure Trial', sans-serif;
             font-size: 1rem;
             padding: 0.75rem 1.5rem;
             border: none;
@@ -92,10 +80,8 @@
             .responsive-two-columns {
                 flex-direction: column;
                 align-items: center;
-                padding: 2rem;
             }
 
-            /* Image full-width on top */
             #displayedImage {
                 display: block;
                 width: 100vw;
